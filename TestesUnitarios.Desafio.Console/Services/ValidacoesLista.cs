@@ -29,5 +29,17 @@ namespace TestesUnitarios.Desafio.Console.Services
         {
             return lista.Min();
         }
+
+        public List<int> MultiplicarPor2(List<int> lista)
+        {
+            var listaMultiplicada = lista.Select(x => x * 2).ToList();
+            return listaMultiplicada;
+        }
+
+        public List<int> RetornarMaiorNumero(List<int> lista)
+        {
+            var maiorNumero = lista.Max();
+            return new List<int> { maiorNumero };
+        }
     }
 }
